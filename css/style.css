@@ -18,9 +18,16 @@ button {
     cursor: pointer;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body {
     height: 100vh;
-    overflow: hidden;
     flex-direction: column;
 }
 
@@ -28,14 +35,104 @@ body {
 
 .main-container {
     flex-grow: 1;
+    min-height: 100px;
 }
 
 /* Left Bar */
 
 .left-bar {
-    width: var(--left-bar);
+    min-width: var(--left-bar);
     background-color: black;
+    flex-direction: column;
+    padding: 1rem;
+    color: #717171;
 }
+
+.logo img{
+    width: 120px;
+}
+
+.page-button li{
+    margin: 1rem 0;
+}
+
+.page-button a{
+    color: currentColor;
+    display: flex;
+    align-items: center;
+}
+
+.page-button .svg{
+    width: 2rem;
+    margin-right: .5rem;
+    fill: currentColor;
+}
+
+.left-bar li:hover{
+    color: white;
+}
+
+.left-bar a:hover {
+    color: white;
+}
+
+.left-bar a:hover i{
+    background-color: white;
+}
+
+/* Playlist */
+
+.left-bar-playlist h3{
+    color: white;
+}
+
+.create-playlist i{
+    background-color: #717171;
+    color: black;
+    padding: .5rem;
+    margin: 1rem 0;
+    margin-right: .5rem;
+}
+
+.create-playlist li{
+    margin: 1rem 0;
+}
+
+.create-playlist a{
+    color: currentColor;
+}
+
+/* Bottom Left Bar */
+
+.bottom-left-bar{
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.bottom-left-bar .svg{
+    width: 2rem;
+    margin-right: .5rem;
+    fill: currentColor;
+}
+
+.bottom-left-bar a{
+    color: currentColor;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-left-bar .svg-user{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.bottom-left-bar hr{
+    margin: 1rem 0;
+}
+
 
 /* Main */
 
@@ -44,6 +141,7 @@ main {
     flex-grow: 1;
     overflow: auto;
     position: relative;
+    background-color: #141922;
 }
 
 /* Top Bar */
@@ -52,24 +150,35 @@ main {
     height: var(--top-height);
     width: calc(100% - var(--left-bar));
     position: fixed;
-    z-index: -1;
+    min-height: 80px;
     background-color: #080b12;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+
+.top-bar button{
+    border-radius: 20px;
+    margin: 2rem 1rem;
+    padding: .5rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
 }
 
 /* Home Page */
 
 .home-page {
-    min-width: 100px;
-    height: 100%;
     margin-top: var(--top-height);
-    z-index: -2;
-    background-color: #141922;
+    height: 100%;
+    padding: 5rem;
 }
 
 
 /* Play Bar */
 
 .play-bar-container {
+    min-height: 100px;
     height: 80px;
     background-color: #282828;
 }
