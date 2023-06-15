@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --left-bar: 200px;
+    --top-height: 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* Main Container */
+
+.main-container {
+    flex-grow: 1;
+}
+
+/* Left Bar */
+
+.left-bar {
+    width: var(--left-bar);
+    background-color: black;
+}
+
+/* Main */
+
+main {
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    position: relative;
+}
+
+/* Top Bar */
+
+.top-bar {
+    height: var(--top-height);
+    width: calc(100% - var(--left-bar));
+    position: fixed;
+    z-index: -1;
+    background-color: #080b12;
+}
+
+/* Home Page */
+
+.home-page {
+    min-width: 100px;
+    height: 100%;
+    margin-top: var(--top-height);
+    z-index: -2;
+    background-color: #141922;
+}
+
+
+/* Play Bar */
+
+.play-bar-container {
+    height: 80px;
+    background-color: #282828;
+}
