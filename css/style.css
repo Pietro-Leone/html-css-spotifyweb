@@ -275,8 +275,127 @@ main {
 .play-bar-container {
     min-height: 100px;
     height: 80px;
+    padding: 1rem;
     background-color: #282828;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/* Now Playing */
+
+.now-playing-img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.now-playing img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.play-bar-title-song {
+    padding: 1rem;
+}
+
+.play-bar-icon-left {
+    align-items: center;
+}
+
+.play-bar-icon-left i {
+    padding: .5rem;
+}
+
+/* Player Controls */
+
+.player-controls {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+}
+
+.bottom-player {
+    align-items: center;
+}
+
+.bottom-player i {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.bottom-player i:nth-of-type(3) {
+    font-size: 2rem;
+}
+
+.bottom-slider {
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 20%;
+}
+
+.now-playing,
+.song-menu {
+    width: 25%;
+}
+
+.song-menu-btn {
+    padding: 0 1rem;
+    width: 150px;
+}
+
+.song-menu-volume {
+    width: 100%;
+}
+
+/* -----------------------------SLIDER----------------------------- */
+
+.slider {
+    margin-top: .5rem;
+    height: 10px;
+    width: 100%;
+    background-color: #5a5a5a;
+    border-radius: 50px;
+    flex-wrap: wrap;
+}
+
+.bar {
+    background-color: #c1c1c1;
+    height: 10px;
+    width: calc(100% / 2);
+    border-radius: 50px;
+    position: relative;
+}
+
+.bar-none {
+    background-color: #5a5a5a;
+    height: 10px;
+    width: calc(100% / 2);
+    border-radius: 50px;
+}
+
+.pointer {
+    display: none;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.slider:hover .pointer {
+    display: block;
+}
+
+.slider:hover .bar {
+    background-color: #1fdf64;
+}
+
+/* ----------------------------------------------------------------- */
 
 
 /* @Media Query */

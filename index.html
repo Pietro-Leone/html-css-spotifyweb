@@ -300,17 +300,67 @@
   </div>
 
   <!-- Play-Bar -->
-  <div class="play-bar-container">
+  <div class="play-bar-container flex">
 
     <!-- Now Playing Widget -->
-    <div class="now-playing"></div>
+    <div class="now-playing flex">
+      <!-- Immagine e Titolo -->
+      <div class="flex">
+        <div class="now-playing-img flex">
+          <img src="img/sinister.jpeg" alt="sinister">
+        </div>
+        <div class="play-bar-title-song">
+          <strong>Sinister</strong>
+          <div>Brano Nome</div>
+        </div>
+      </div>
+      <!-- Icone -->
+      <div class="play-bar-icon-left flex">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+      </div>
+
+    </div>
 
     <!-- Player Controls -->
-    <div class="player-controls"></div>
+    <div class="player-controls flex">
+      <div class="bottom-player flex">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-regular fa-circle-play"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-rotate-right"></i>
+      </div>
+      <div class="bottom-slider flex">
+
+        <div class="slider flex">
+          <div class="bar">
+            <div class="pointer"></div>
+          </div>
+          <div class="bar-none"></div>
+        </div>
+
+      </div>
+    </div>
 
     <!-- Song Menu -->
-    <div class="song-menu"></div>
+    <div class="song-menu flex">
 
+      <div class="song-menu-btn">
+        <i class="fa-solid fa-list"></i>
+        <i class="fa-solid fa-tv"></i>
+        <i class="fa-solid fa-volume-high"></i>
+      </div>
+
+      <div class="song-menu-volume">
+        <div class="slider">
+          <div class="bar">
+            <div class="pointer"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </body>
