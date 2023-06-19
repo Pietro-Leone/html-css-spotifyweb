@@ -29,6 +29,7 @@ a {
 body {
     height: 100vh;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* Main Container */
@@ -264,6 +265,10 @@ main {
     color: white;
 }
 
+.artists button {
+    border-radius: 50%;
+}
+
 .cover:hover button {
     display: block;
 }
@@ -369,7 +374,6 @@ main {
 .bottom-slider {
     flex-grow: 1;
     width: 100%;
-    padding: 0 20%;
     align-items: center;
 }
 
@@ -466,7 +470,7 @@ main {
 }
 
 /* 2 cover */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
     .cover {
         width: calc((100% / 2) - 1rem);
     }
@@ -478,6 +482,10 @@ main {
     .now-playing img {
         width: 3rem;
         height: 3rem;
+    }
+
+    .bottom-slider {
+        padding: 0 20%;
     }
 }
 
