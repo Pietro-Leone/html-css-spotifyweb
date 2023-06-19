@@ -199,7 +199,10 @@
           <div class="covers flex">
             <!-- Recently 1 -->
             <div class="cover">
-              <img src="img/metal_lifting.jpg" alt="metal">
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/metal_lifting.jpg" alt="metal">
+              </div>
               <h3>Heavy Metal</h3>
               <span class="subtitle">
                 Subtitle
@@ -207,7 +210,10 @@
             </div>
             <!-- Recently 2 -->
             <div class="cover">
-              <img src="img/stranger.jpeg" alt="stranger">
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/stranger.jpeg" alt="stranger">
+              </div>
               <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
               <span class="subtitle">
                 Kyle Dixon & Michael Stein
@@ -215,32 +221,44 @@
             </div>
             <!-- Recently 3 -->
             <div class="cover">
-              <img src="img/aquietplace.jpeg" alt="aquietplace">
-              <h3>Heavy Metal</h3>
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/aquietplace.jpeg" alt="aquietplace">
+              </div>
+              <h3>A quiet place</h3>
               <span class="subtitle">
                 Subtitle
               </span>
             </div>
             <!-- Recently 4 -->
             <div class="cover">
-              <img src="img/split.jpeg" alt="split">
-              <h3>Heavy Metal</h3>
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/split.jpeg" alt="split">
+              </div>
+              <h3>Split</h3>
               <span class="subtitle">
                 Subtitle
               </span>
             </div>
             <!-- Recently 5 -->
             <div class="cover">
-              <img src="img/cure.jpeg" alt="cure">
-              <h3>Heavy Metal</h3>
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/cure.jpeg" alt="cure">
+              </div>
+              <h3>A cure for Wellness</h3>
               <span class="subtitle">
                 Subtitle
               </span>
             </div>
             <!-- Recently 6 -->
             <div class="cover">
-              <img src="img/sinister.jpeg" alt="sinister">
-              <h3>Heavy Metal</h3>
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/sinister.jpeg" alt="sinister">
+              </div>
+              <h3>Sinister</h3>
               <span class="subtitle">
                 Subtitle
               </span>
@@ -258,12 +276,18 @@
           <div class="covers flex">
             <!-- For you 1 -->
             <div class="cover">
-              <img src="img/radar.jpeg" alt="radar">
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/radar.jpeg" alt="radar">
+              </div>
               <h3>Release Radar</h3>
             </div>
-            <!-- For you 1 -->
+            <!-- For you 2 -->
             <div class="cover">
-              <img src="img/mixdaily.jpeg" alt="daily mix">
+              <div class="container-cover-play">
+                <button><i class="fa-regular fa-circle-play"></i></button>
+                <img src="img/mixdaily.jpeg" alt="daily mix">
+              </div>
               <h3>Daily Mix 1</h3>
             </div>
           </div>
@@ -280,15 +304,22 @@
             <div class="covers flex">
               <!-- Artist 1 -->
               <div class="cover">
-                <img src="img/youg.jpeg" class="artist-pic" alt="young">
+                <div class="container-cover-play">
+                  <button><i class="fa-regular fa-circle-play"></i></button>
+                  <img src="img/youg.jpeg" class="artist-pic" alt="young">
+                </div>
                 <h3>Release Radar</h3>
               </div>
-              <!-- Artist 1 -->
+              <!-- Artist 2 -->
               <div class="cover">
-                <img src="img/einaudi.jpeg" class="artist-pic" alt="einaudi">
+                <div class="container-cover-play">
+                  <button><i class="fa-regular fa-circle-play"></i></button>
+                  <img src="img/einaudi.jpeg" class="artist-pic" alt="einaudi">
+                </div>
                 <h3>Daily Mix 1</h3>
               </div>
             </div>
+
           </div>
 
         </div>
@@ -316,8 +347,10 @@
       </div>
       <!-- Icone -->
       <div class="play-bar-icon-left flex">
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-regular fa-folder"></i>
+        <div>
+          <button><i class="fa-regular fa-heart"></i></button>
+          <button><i class="fa-regular fa-folder"></i></button>
+        </div>
       </div>
 
     </div>
@@ -325,13 +358,15 @@
     <!-- Player Controls -->
     <div class="player-controls flex">
       <div class="bottom-player flex">
-        <i class="fa-solid fa-shuffle"></i>
-        <i class="fa-solid fa-backward-step"></i>
-        <i class="fa-regular fa-circle-play"></i>
-        <i class="fa-solid fa-forward-step"></i>
-        <i class="fa-solid fa-rotate-right"></i>
+        <button><i class="fa-solid fa-shuffle"></i></button>
+        <button><i class="fa-solid fa-backward-step"></i></button>
+        <button><i class="fa-regular fa-circle-play"></i></button>
+        <button><i class="fa-solid fa-forward-step"></i></button>
+        <button><i class="fa-solid fa-rotate-right"></i></button>
       </div>
       <div class="bottom-slider flex">
+
+        <span>2:15</span>
 
         <div class="slider flex">
           <div class="bar">
@@ -340,6 +375,8 @@
           <div class="bar-none"></div>
         </div>
 
+        <span>4:30</span>
+
       </div>
     </div>
 
@@ -347,12 +384,12 @@
     <div class="song-menu flex">
 
       <div class="song-menu-btn">
-        <i class="fa-solid fa-list"></i>
-        <i class="fa-solid fa-tv"></i>
-        <i class="fa-solid fa-volume-high"></i>
+        <button><i class="fa-solid fa-list"></i></button>
+        <button><i class="fa-solid fa-tv"></i></button>
+        <button><i class="fa-solid fa-volume-high"></i></button>
       </div>
 
-      <div class="song-menu-volume">
+      <div class="song-menu-volume flex">
         <div class="slider">
           <div class="bar">
             <div class="pointer"></div>
